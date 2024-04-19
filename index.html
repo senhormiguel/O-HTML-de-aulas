@@ -1,51 +1,227 @@
+<!-- 
+	Documentation: 
+	https://www.figma.com/file/udWyes5Zfj14qQDmD6oUzL/Edit---Design-Systems?type=design&node-id=2%3A783&mode=dev&t=RszSJCDWvtv4ecS1-1
+ -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Flags of the world</title>
-		<link rel="stylesheet" href="styles.css" />
+		<title>Design System</title>
+		<link rel="stylesheet" href="styles/globals.css" />
+		<style>
+			.button {
+				background-color: #0070D2; /* Green */
+				border: none;
+				color: white;
+				  height: 32px;
+				  padding: 1px, 16px, 1px, 16px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 16px;
+				  margin: 4px 2px;
+				  transition-duration: 0.4s;
+				  cursor: pointer;
+			}
+
+			.button1 {
+			  background-color: #0070D2; 
+			  color: white; 
+			  border: 2px solid #0070D2;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			  
+			}
+
+			.button1:hover {
+			  background-color: #005FB2;
+			  color: white;
+			  border: 2px solid #005FB2;
+			}
+
+			.button2 {
+			  background-color: #0070D2; 
+			  color: white; 
+			  border: 2px solid #0070D2;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+
+			}
+
+			.button2:hover {
+			  background-color: #C9C7C5;
+			  color: white;
+			  border: 2px solid #C9C7C5;
+			  
+			}
+
+			.button3 {
+			  background-color: white; 
+			  color: #005FB2; 
+			  border: 2px solid #005FB2;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+
+			}
+
+			.button3:hover {
+			  background-color: white;
+			  color: #C9C7C5;
+			  border: 2px solid white;
+			}
+
+			.button4 {
+			  background-color: #C23934; 
+			  color: white; 
+			  border: 2px solid #C23934;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button4:hover {
+			  background-color: #A61A14;
+			  color: white;
+			  border: 2px solid #A61A14;
+
+			}
+
+			.button5 {
+			  background-color: #C23934; 
+			  color: white; 
+			  border: 2px solid #C23934;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button5:hover {
+			  background-color: #C9C7C5;
+			  color: white;
+			  border: 2px solid #C9C7C5; 
+			  
+			}
+
+			.button6 {
+			  background-color: #4BCA81; 
+			  color: white; 
+			  border: 2px solid #4BCA81;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button6:hover {
+			  background-color: #04844B;
+			  color: white;
+			  border: 2px solid #04844B; 
+			  
+			}
+
+			.button7 {
+			  background-color: #04844B; 
+			  color: white; 
+			  border: 2px solid #04844B;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button7:hover {
+			  background-color: #C9C7C5;
+			  color: white;
+			  border: 2px solid #C9C7C5; 
+			  
+			}
+
+			input[type=text] {
+			  width: 220px;
+			  height: 52px;
+			  top: 184px;
+			  left: 540px;
+			  padding: 12px 14px;
+			  margin: 5px 0;
+			  box-sizing: border-box;
+			  border: 2px solid #ccc;
+			  -webkit-transition: 0.5s;
+			  transition: 0.5s;
+			  outline: none;
+			}
+
+	</style>
 	</head>
 	<body>
-		<div class="flag_container">
-			<h3 class="flag_title">Italy</h3>
-			<div class="italy_flag"></div>
-		</div>
-
-		<div class="flag_container">
-			<h3 class="flag_title">Ukraine</h3>
-			<div class="ukraine_flag"></div>
-		</div>
-
-		<div class="flag_container">
-			<h3 class="flag_title">Kuwait</h3>
-			<div class="flag flag--kuwait"></div>
-		</div>
-
-		<div class="flag_container">
-			<h3 class="flag_title">Bangladesh</h3>
-			<div class="bangladesh_flag" style="padding-bottom: 80px;">
-				<i>&nbsp;</i>
+		<div class="wrapper">
+			<h3 class="wrapper__title">Avatars</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<!-- Conteúdo aqui -->
+					<div class="user1">
+						<img src="assets/user.jpeg" alt="user" style="width:48px;height:48px;border-radius: 12px;">
+					</div>
+					<div class="user2">
+						<img src="assets/user.jpeg" alt="user" style="width:32px;height:32px;border-radius: 8px;">
+					</div>
+					<div class="user3">
+						<img src="assets/user.jpeg" alt="user" style="width:24px;height:24px;border-radius: 4px;">
+					</div>
+					<div class="original_user">
+						<img src="assets/user.jpeg" alt="original" style="border-radius: 12px;">
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="flag_container">
-			<h3 class="flag_title">Portugal</h3>
-			<div class="portugal_flag">
-
+		<div class="wrapper">
+			<h3 class="wrapper__title">Buttons</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<!-- Conteúdo aqui -->
+					<button class="button button1">Label</button>
+					<button class="button button2">Label</button>
+					<button class="button button3">Label</button>
+					<button class="button button4">Label</button>
+					<button class="button button5">Label</button>
+					<button class="button button6">Label</button>
+					<button class="button button7">Label</button>
+				</div>
 			</div>
 		</div>
 
-		<div class="flag_container">
-			<h3 class="flag_title">Japan</h3>
-			<div class="japan_flag" style="padding-bottom: 80px;">
-				<i>&nbsp;</i>
+		<div class="wrapper">
+			<h3 class="wrapper__title">Inputs</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<!-- Conteúdo aqui -->
+					<form>
+  						<label for="fname">Field Label</label>
+  						<br>
+  						<input type="text" id="fname" name="fname" value="Placeholder">
+					</form>
+				</div>
 			</div>
-		</div>
-
-		<div class="flag_container">
-			<h3 class="flag_title">Greece</h3>
-			<div class="flag flag--greece"></div>
 		</div>
 	</body>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace();
+	</script>
 </html>
