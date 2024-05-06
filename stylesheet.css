@@ -1,0 +1,168 @@
+/* Página Inicial */
+body{
+
+	font-family: Open Sans;
+	color: black;
+	background-color: #efecec;
+
+	
+}
+
+/* Logótipo */
+
+.logo{
+
+	margin-left: 88px;
+}
+/* Align no Navegador */
+.topnav{
+
+	text-align: center;
+
+}
+
+
+
+/* Navegador */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: -32px;
+  margin-left: 75px;
+  /* responsivamente, margin-left: -13px; */
+
+
+
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+/* Imagem do Chef */
+
+/*  margin-left: 150px;
+	margin-top: 40px;
+	Imagem a 1000px */
+.img{
+
+	margin-left: 0px;
+	margin-top: 0px;
+
+	}
+
+/* Texto da imagem */
+.Heading{
+
+	margin-top: 25px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Atributo textual */
+.text_chef{
+
+	line-height: 24px;
+	font-size: 16px;
+	margin-top: -35px;
+	margin-right: 22px;
+	margin-left: 22px;
+
+}
+
+/* Tabela */
+#table{
+
+	
+	margin-bottom: 35px;
+	margin-left: 32%;
+
+
+}
+
+
+th{
+
+	background-color: #f6b26b;
+
+}
+/* td = background-color: #f9cb9c; */
+td{
+
+	background-color: none;
+	text-align:center;
+
+}
+
+
+
+/* Tamanho das imagens das redes sociais */
+#size_img{
+
+	width: 22px;
+	height: 22px;
+
+}
+
+/* Footer */
+
+.footer{
+
+	background-color: none;
+	padding-bottom: 100px;
+	background-size: cover;
+
+
+}
+
+/* Direitos reservados_frase */
+.direitos{
+
+	padding-top: 5%;
+	margin-left: 68.5%;
+	font-size: 12px;
+
+
+
+
+
+}
+
+/* Imagens das redes sociais */
+#social_img{
+
+
+	float: right;
+	padding-right: 10%;
+}
+
+

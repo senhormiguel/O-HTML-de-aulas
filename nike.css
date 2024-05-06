@@ -1,0 +1,120 @@
+body {
+  background: blue;
+}
+.card {
+  width: 350px;
+  aspect-ratio: 9/16;
+ }
+
+.orange {
+  background: #ff0000;
+  height: 80%;
+  border-radius: 12px 12px 0 0;
+
+}
+
+.bottom {
+  height: 20%;
+  background: white;
+  border-radius: 0 0 12px 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paragraph {
+  padding-top: 18px; 
+  letter-spacing: 3px;
+  padding-left: 7px;
+  font-family: "Lato", sans-serif;
+  color:white;
+}
+
+.text{
+  padding-top: 12px;
+  padding-left: 7px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  }
+
+.air {
+  font-size: 150px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  opacity: 0.2;
+  margin-bottom:0px;
+  text-align: center;
+  color:white;
+  letter-spacing: 17px;
+
+}
+
+.price{
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  margin-right: 12px;
+  color: white;
+}
+
+.men_text{
+padding-top: 0px; 
+margin-top: 15px; 
+text-align:center; 
+letter-spacing: 3px;
+font-family: "Lato", sans-serif;
+}
+
+.nikeshoe {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+} 
+
+.button1 {
+  background: white; 
+  color: blue; 
+  border: 2px solid blue;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: 120px;
+  margin-top: 15px;
+      }
+
+.button1:hover {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  cursor: pointer;
+      }
+
+/*
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.price{
+	font-size: 18px;
+}
+
+.title{
+	font-size: 24px;
+}
+
+
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+} */

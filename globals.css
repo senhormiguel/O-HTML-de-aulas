@@ -9,7 +9,7 @@
     --green: #4BCA81;
     --green-10: #04844B;
 }
-
+/*body*/
 html,
 body {
     font-family: "Inter", sans-serif;
@@ -18,7 +18,7 @@ body {
     font-style: normal;
     background: #fafafa;
 }
-
+/*wraper*/
 .wrapper__content {
     background: white;
     border: 1px solid gainsboro;
@@ -32,20 +32,96 @@ body {
     margin: 32px 0;
     gap: 24px;
 }
+/*Input's*/
+.input_error2{
+    color:red;
+}
 
+.search2{
+    color:red;
+}
+
+.search4{
+    color:red;
+}
+/*Avatar, imagens*/
 .user1{
     padding-right: 10%;
     border-radius: 12px 12px 12px 12px;
+
 }
 
 .user2{
     padding-right: 10%;
+
 }
 
 .user3{
     padding-right: 10%;
+
 }
 
 .original_user{
     padding-right: 10%;
+}
+/*outros input's*/
+.input_error{
+    color: red;
+}
+
+{
+  /* INPUT GLASS_com lupa */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.input_glass {
+  margin: 100px auto;
+  width: 200px;
+  height: 60px
+
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+.search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  background: #ebebeb;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+/*BUTTONS = BOTÕES*/
+/*button DEFAULT CSS globals*/
+.button{
+    border-radius: 8px;
+    padding-top: 7px;
+    padding-bottom: 22px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+/*button PRESS blue*/
+.button{
+    border-radius: 8px;
+    padding-top: 7px;
+    padding-bottom: 22px;
+    padding-left: 13px;
+    padding-right: 13px;
 }

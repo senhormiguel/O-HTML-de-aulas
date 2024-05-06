@@ -9,22 +9,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Design System</title>
 		<link rel="stylesheet" href="styles/globals.css" />
+		<!--Contém CSS interno da escolha do botão, com "botões hover" iniciais, com "Default" (também relacionados: button 10,11,13) que dão para outras cores associadas ao "Press" (relacionados: button 10,12,14) e "Disabled". Acréscimo: globals.css-->
 		<style>
 			.button {
-				background-color: #0070D2; /* Green */
+				background-color: #0070D2;
 				border: none;
 				color: white;
-				  height: 32px;
-				  padding: 1px, 16px, 1px, 16px;
-				  text-align: center;
-				  text-decoration: none;
-				  display: inline-block;
-				  font-size: 16px;
-				  margin: 4px 2px;
-				  transition-duration: 0.4s;
-				  cursor: pointer;
-			}
+				height: 32px;
+				padding: 1px, 16px, 1px, 16px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				transition-duration: 0.4s;
+				cursor: pointer;
 
+			}
+		
 			.button1 {
 			  background-color: #0070D2; 
 			  color: white; 
@@ -151,6 +153,73 @@
 			  border: 2px solid #C9C7C5; 
 			  
 			}
+			
+			.button10 {
+			  background-color: white; 
+			  color: #005FB2; 
+			  border: 2px solid #005FB2;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+			
+			.button11 {
+			  background-color: #C23934; 
+			  color: white; 
+			  border: 2px solid #C23934;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button12 {
+			  background-color: #A61A14; 
+			  color: white; 
+			  border: 2px solid #A61A14;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button13 {
+			  background-color: #4BCA81; 
+			  color: white; 
+			  border: 2px solid #4BCA81;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button14 {
+			  background-color: #04844B; 
+			  color: white; 
+			  border: 2px solid #04844B;
+			  border-radius: 8px;
+			  padding-top: 7px;
+			  padding-bottom: 22px;
+			  padding-left: 13px;
+			  padding-right: 13px;
+			}
+
+			.button_disabled{
+			  background-color: #C9C7C5;
+			  color: white;
+			  border: 2px solid #C9C7C5;
+			}
+
+			.button_disabled2{
+			  background-color: white;
+			  color: #C9C7C5;
+			  border: 2px solid white;
+			}
 
 			input[type=text] {
 			  width: 220px;
@@ -175,10 +244,10 @@
 				<div class="flex">
 					<!-- Conteúdo aqui -->
 					<div class="user1">
-						<img src="assets/user.jpeg" alt="user" style="width:48px;height:48px;border-radius: 12px;">
+						<img src="assets/user.jpeg" alt="user" style="width:48px;height:48px;border-radius:12px;">
 					</div>
 					<div class="user2">
-						<img src="assets/user.jpeg" alt="user" style="width:32px;height:32px;border-radius: 8px;">
+						<img src="assets/user.jpeg" alt="user" style="width:32px;height:32px; border-radius:8px;">
 					</div>
 					<div class="user3">
 						<img src="assets/user.jpeg" alt="user" style="width:24px;height:24px;border-radius: 4px;">
@@ -189,7 +258,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!--Buttons-->
 		<div class="wrapper">
 			<h3 class="wrapper__title">Buttons</h3>
 			<div class="wrapper__content">
@@ -202,10 +271,23 @@
 					<button class="button button5">Label</button>
 					<button class="button button6">Label</button>
 					<button class="button button7">Label</button>
+					<div class="button8">
+						<button class="button button8">Label</button>
+					</div>
+					<div class="button9">
+						<button class="button button9">Label</button>
+					</div>
+					<button class="button button10">Label</button>
+					<button class="button button11">Label</button>
+					<button class="button button12">Label</button>
+					<button class="button button13">Label</button>
+					<button class="button button14">Label</button>
+					<button class="button button_disabled">Label</button>
+					<button class="button button_disabled2">Label</button>
 				</div>
 			</div>
 		</div>
-
+		<!--Inputs-->
 		<div class="wrapper">
 			<h3 class="wrapper__title">Inputs</h3>
 			<div class="wrapper__content">
@@ -214,11 +296,91 @@
 					<form>
   						<label for="fname">Field Label</label>
   						<br>
-  						<input type="text" id="fname" name="fname" value="Placeholder">
+  						<input type="text" id="fname" name="fname" value="Placeholder" style="border-radius: 12px;">
 					</form>
+					<div class="sem_Field_Label">
+						<input type="text" id="fname" name="fname" value="Placeholder" style="border-radius: 12px";>
+					</div>
+					<div class="input_submit">
+						<form action="/action_page.php">
+  							<label for="lname">Field Label:</label><br>
+  							<input type="text" id="lname" name="lname" value="Placeholder" style="border-radius: 12px;"><br>
+  							<input type="submit" value="Submit">
+						</form>
+					</div>
+					<div class="input_error">
+						<form action="/action_page.php">
+  							<label for="lname">Field Label:</label><br>
+  							<input type="text" id="lname" name="lname" value="Placeholder" style="border-radius: 12px;"><br>
+  							<label for="lname">Error label</label><br>
+  							<input type="submit" value="Submit">
+						</form>
+					</div>
+					<div class="input_error2">
+						<input type="text" id="lname" name="lname" value="Placeholder" style="border-radius: 12px;"><br>
+  							<label for="lname">Error label</label><br>
+					</div>
+					<div class="search">
+						<input id="tnb-google-search-input" type="text" placeholder="Placeholder..." autocomplete="off" onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)" aria-label="Search field" oninput="TopNavBar.searchWithSuggestions(this)" onfocus="TopNavBar.
+						searchWithSuggestions(this)" onblur="TopNavBar.searchFieldLostFocus(event)" style="border-radius:12px;">
+					</div>
+					<div class="search2">
+						<input id="tnb-google-search-input" type="text" placeholder="Placeholder..." autocomplete="off" onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)" aria-label="Search field" oninput="TopNavBar.searchWithSuggestions(this)" onfocus="TopNavBar.
+						searchWithSuggestions(this)" onblur="TopNavBar.searchFieldLostFocus(event)" style="border-radius:12px;"><br>
+						<label for="lname">Error label</label>
+					</div>
+					<div class="search3">
+						<label for="lname">Field Label</label><br>
+						<input id="tnb-google-search-input" type="text" placeholder="Placeholder..." autocomplete="off" onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)" aria-label="Search field" oninput="TopNavBar.searchWithSuggestions(this)" onfocus="TopNavBar.
+						searchWithSuggestions(this)" onblur="TopNavBar.searchFieldLostFocus(event)" style="border-radius:12px;">
+					</div>
+					<div class="search4">
+						<label for="lname">Field Label</label><br>
+						<input id="tnb-google-search-input" type="text" placeholder="Placeholder..." autocomplete="off" onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)" aria-label="Search field" oninput="TopNavBar.searchWithSuggestions(this)" onfocus="TopNavBar.
+						searchWithSuggestions(this)" onblur="TopNavBar.searchFieldLostFocus(event)" style="border-radius:12px;"><br>
+						<label for="lname">Error label</label>
+					</div>
+
+					<div class="input_glass">
+						<form action="/" method="GET" class="form">
+						<input type="search" placeholder="Placeholder" class="search-field" />
+						<button type="submit" class="search-button">
+							<img src="assets/search.png">
+						</button>
+						</form>
+					</div>
+					<div class="input_glass2">
+						<label for="lname">Field Label:</label><br>
+						<form action="/" method="GET" class="form">
+						<input type="search" placeholder="Placeholder" class="search-field" />
+						<button type="submit" class="search-button">
+							<img src="assets/search.png">
+						</button>
+						</form>
+					</div>
+
+				<div class="input_glass3">
+						<label for="lname">Field Label:</label><br>
+						<form action="/" method="GET" class="form">
+						<input type="search" placeholder="Placeholder" class="search-field" />
+						<button type="submit" class="search-button">
+							<img src="assets/search.png">
+						</button>
+						</form>
+						<p>Error label</p>
+				</div>
+				<div class="input_glass4">
+						<form action="/" method="GET" class="form">
+						<input type="search" placeholder="Placeholder" class="search-field" />
+						<button type="submit" class="search-button">
+							<img src="assets/search.png">
+						</button>
+						</form>
+						<p>Error label</p>
 				</div>
 			</div>
 		</div>
+
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<script>
